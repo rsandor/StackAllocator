@@ -15,7 +15,6 @@ int main(int argc, char **argv) {
 
 		for (unsigned int i = 0; i < tests; i++) {
 			char *ptr = (char *)malloc(sizeof(char) * chunkSize);
-			sprintf(ptr, "12345678901234567890123456789012");
 			free(ptr);
 		}
 	}
@@ -26,7 +25,6 @@ int main(int argc, char **argv) {
 
 		for (unsigned int i = 0; i < tests; i++) {
 			char *ptr = (char *)stack->alloc(chunkSize);
-			sprintf(ptr, "12345678901234567890123456789012");
 		}
 
 		delete stack;
